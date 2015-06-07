@@ -1,0 +1,181 @@
+
+
+================================================================
+== Vivado HLS Report for 'acc_vadd'
+================================================================
+* Date:           Fri Apr 24 13:50:10 2015
+
+* Version:        2014.2 (Build 932637 on Wed Jun 11 12:38:34 PM 2014)
+* Project:        acc_vadd
+* Solution:       solution1
+* Product family: kintex7 kintex7_fpv6 
+* Target device:  xc7k325tffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      1.60|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|Expression       |        -|      -|       -|       -|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|       -|
+|Register         |        -|      -|       -|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+|Available        |      890|    840|  407600|  203800|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|       0|       0|
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
+N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 1
+* Pipeline: 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+* FSM state operations: 
+
+ <State 1>: 1.60ns
+ST_1: stg_2 [1/1] 0.00ns
+:0  call void (...)* @_ssdm_op_SpecBitsMap(i32* %sI1) nounwind, !map !0
+
+ST_1: stg_3 [1/1] 0.00ns
+:1  call void (...)* @_ssdm_op_SpecBitsMap(i32* %sI2) nounwind, !map !6
+
+ST_1: stg_4 [1/1] 0.00ns
+:2  call void (...)* @_ssdm_op_SpecBitsMap(i32* %mO1) nounwind, !map !10
+
+ST_1: stg_5 [1/1] 0.00ns
+:3  call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @str) nounwind
+
+ST_1: stg_6 [1/1] 0.00ns
+:4  call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_7 [1/1] 0.00ns
+:5  call void (...)* @_ssdm_op_SpecInterface(i32* %sI1, [5 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_8 [1/1] 0.00ns
+:6  call void (...)* @_ssdm_op_SpecInterface(i32* %sI2, [5 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: stg_9 [1/1] 0.00ns
+:7  call void (...)* @_ssdm_op_SpecInterface(i32* %mO1, [5 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 16, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind
+
+ST_1: sI1_read [1/1] 0.00ns
+:8  %sI1_read = call i32 @_ssdm_op_Read.axis.i32P(i32* %sI1) nounwind
+
+ST_1: sI2_read [1/1] 0.00ns
+:9  %sI2_read = call i32 @_ssdm_op_Read.axis.i32P(i32* %sI2) nounwind
+
+ST_1: mO1_assign [1/1] 1.60ns
+:10  %mO1_assign = add nsw i32 %sI2_read, %sI1_read
+
+ST_1: stg_13 [1/1] 0.00ns
+:11  call void @_ssdm_op_Write.axis.i32P(i32* %mO1, i32 %mO1_assign) nounwind
+
+ST_1: stg_14 [1/1] 0.00ns
+:12  ret void
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

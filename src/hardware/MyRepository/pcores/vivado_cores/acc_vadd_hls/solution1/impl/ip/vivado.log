@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:12:34 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri Jun  5 14:10:03 2015
+# Process ID: 4999
+# Log file: /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/impl/ip/vivado.log
+# Journal file: /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/senma/Xilinx/Vivado/2014.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 14:10:07 2015...

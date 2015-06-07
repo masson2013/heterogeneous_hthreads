@@ -1,0 +1,635 @@
+@I [HLS-0] Workspace /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1 opened at Fri Jun 05 14:10:02 CDT 2015
+@I [HLS-100] Command "config_clock -quiet -name default -period 10 -default=false "
+@I [SYN-201] Setting up clock 'default' with a period of 10ns.
+@I [HLS-100] Command 'config_clock' returned 0; elapsed 0Total elapsed time: 0.335 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.336 sec.
+@I [HLS-100] Command "import_lib /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7 "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.lib "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/xilinx_interface.lib "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/plb46.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.336 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/fsl.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.336 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/axi4.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.336 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.337 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.337 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.337 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfft.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.337 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfir.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.337 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.338 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_old.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.339 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_vivado.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.340 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.hlp "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/target_info.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.341 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/xilinx_interface.hlp "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.341 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.341 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.341 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.342 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/dsp48e1.hlp "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.342 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.342 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 50950} {LUT 203800}    {FF 407600} {DSP48E 840}    {BRAM 890}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.342 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.342 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0.01Total elapsed time: 0.343 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.344 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.344 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.345 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.346 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.348 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.348 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.352 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.357 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.357 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.06Total elapsed time: 0.421 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/tps/tcl/tcllib1.11.1/struct/list.tcl "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.429 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.430 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/tps/tcl/tcllib1.11.1/math/bignum.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.432 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 0.437 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 0.437 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.437 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 0.437 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 0.437 sec.
+@I [HLS-100] Command "open_platform DefaultPlatform "
+@I [HLS-100] Command 'open_platform' returned 0; elapsed 0Total elapsed time: 0.437 sec.
+@I [HLS-100] Command "import_lib /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7_fpv6 "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv7.lib "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv6.lib "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.438 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.439 sec.
+@I [HLS-100] Command 'import_lib' returned 0; elapsed 0Total elapsed time: 0.445 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.445 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.445 sec.
+@I [HLS-100] Command "set_part xc7k325tffg900-2 "
+@I [HLS-100] Command "add_library xilinx/kintex7/kintex7:xc7k325t:ffg900:-2 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.447 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 0.455 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.01Total elapsed time: 0.464 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 0.464 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.465 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 50950} {LUT 203800}    {FF 407600} {DSP48E 840}    {BRAM 890}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.465 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.465 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.01Total elapsed time: 0.465 sec.
+@I [HLS-100] Command "add_library xilinx/kintex7/kintex7_fpv6 "
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.466 sec.
+@I [HLS-100] Command "license_exists VIVADO_HLS "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0.01Total elapsed time: 0.476 sec.
+@I [HLS-100] Command "license_exists AUTOESL_NI "
+@I [HLS-100] Command 'license_exists' returned 1; elapsed 0Total elapsed time: 0.484 sec.
+@I [HLS-100] Command "license_exists HLS "
+@I [HLS-100] Command 'license_exists' returned 0; elapsed 0Total elapsed time: 0.484 sec.
+@I [HLS-100] Command 'add_library' returned 0; elapsed 0.01Total elapsed time: 0.486 sec.
+@I [HLS-10] Setting target device to 'xc7k325tffg900-2'
+@I [HLS-100] Command 'set_part' returned 0; elapsed 0.02Total elapsed time: 0.486 sec.
+@I [HLS-100] Command "get_default_platform "
+@I [HLS-100] Command 'get_default_platform' returned 0; elapsed 0Total elapsed time: 0.486 sec.
+@I [HLS-100] Command "config_chip_info -quiet -resource  {SLICE 50950} {LUT 203800}    {FF 407600} {DSP48E 840}    {BRAM 890}  "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.486 sec.
+@I [HLS-100] Command "config_chip_info -quiet -speed medium "
+@I [HLS-100] Command 'config_chip_info' returned 0; elapsed 0Total elapsed time: 0.486 sec.
+@I [HLS-100] Command 'open_solution' returned 0; elapsed 0.13Total elapsed time: 0.487 sec.
+@I [HLS-100] Command "export_design -format ip_catalog "
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.494 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.497 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.498 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.498 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.498 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.498 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.498 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.499 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.500 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.501 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.502 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.504 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.504 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.508 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.512 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.513 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.06Total elapsed time: 0.572 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 0.586 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 0.586 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.587 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 0.587 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 0.587 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.588 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.588 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.588 sec.
+@I [IMPL-8] Exporting RTL as an IP in IP-XACT.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.589 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.591 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.592 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.592 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.592 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.593 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.593 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.593 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.594 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.594 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.595 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.596 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.598 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.598 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.602 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.607 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.607 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.06Total elapsed time: 0.666 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 0.680 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 0.680 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.681 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 0.681 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 0.681 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.682 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.682 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.682 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.compgen.tcl "
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.684 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.684 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.684 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.685 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 0.704 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.707 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.722 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.723 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.728 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.729 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.729 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.729 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.743 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.743 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.744 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.752 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.rtl_wrap.cfg.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.752 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.752 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.tbgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.752 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.776 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.782 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.782 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.782 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.784 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.784 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.784 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.785 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.785 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.785 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.786 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.786 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.787 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.789 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.790 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.791 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 0.795 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.800 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.800 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.06Total elapsed time: 0.859 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 0.875 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 0.875 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.876 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 0.876 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 0.876 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.877 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 0.877 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.961 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.968 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.968 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.969 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.970 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.971 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.971 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.973 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.974 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 4.976 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.978 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.979 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.979 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 4.984 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 4.989 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 4.989 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.06Total elapsed time: 5.49 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 5.64 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 5.64 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.65 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 5.65 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 5.65 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.66 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.66 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 5.66 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.66 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.68 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.68 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.69 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.69 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.69 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.69 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.69 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.70 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.71 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.72 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.73 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.75 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.75 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 5.79 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.83 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.84 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.06Total elapsed time: 5.144 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 5.158 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.08Total elapsed time: 5.158 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.159 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 5.159 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 5.159 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.160 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.160 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.160 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.171 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.171 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.172 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.172 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.172 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.173 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.173 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.173 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.174 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.174 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.175 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.176 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.178 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.178 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 5.182 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.187 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.187 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.06Total elapsed time: 5.247 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 5.262 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.08Total elapsed time: 5.262 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.263 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 5.263 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 5.263 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.264 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 5.264 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.838 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.845 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.845 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.846 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.847 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.848 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.848 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.850 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.851 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 8.854 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.857 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.858 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.858 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.863 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 8.868 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.868 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.06Total elapsed time: 8.932 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.02Total elapsed time: 8.947 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 8.947 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.947 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 8.947 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.1Total elapsed time: 8.947 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.948 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.948 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.948 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.949 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.950 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.951 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.951 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.951 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.952 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.952 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.952 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.953 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.953 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.954 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.955 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 8.957 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 8.957 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.961 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.966 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 8.966 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.07Total elapsed time: 9.26 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 9.41 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 9.41 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.42 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 9.42 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 9.42 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.43 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.43 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.compgen.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.43 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.53 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/acc_vadd_hls.constraint.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.53 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/common.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/APCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.54 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.55 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.55 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/op_simcore.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.55 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/generic/autopilot/interface.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.55 sec.
+@I [HLS-100] Command "source /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/solution1/.autopilot/db/global.setting.tcl "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.55 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/virtex.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/plb46.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.56 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/fsl.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.56 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/axi4.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.58 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/nativeAXI4.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/saxilite.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.59 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/maxi.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 9.61 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 9.61 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/scripts/xilinxcoregen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.65 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/interface/XilEDKCoreGen.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 9.69 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/util.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.69 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfft.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.06Total elapsed time: 9.130 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/ip/xfir.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.01Total elapsed time: 9.145 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 9.145 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/dsp48.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.145 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 9.145 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0.09Total elapsed time: 9.145 sec.
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/kintex7/kintex7_fpv6.gen "
+@I [HLS-100] Command "source /home/senma/Xilinx/Vivado_HLS/2014.2/common/technology/xilinx/common/xilinx_fpv6.gen "
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.146 sec.
+@I [HLS-100] Command 'ap_source' returned 0; elapsed 0Total elapsed time: 9.146 sec.
+@I [HLS-100] Command 'export_design' returned 0; elapsed 1.03Total elapsed time: 12.602 sec.
+@I [HLS-100] Command "cleanup_all "
+@I [HLS-100] Command 'cleanup_all' returned 0; elapsed 0.01Total elapsed time: 12.603 sec.

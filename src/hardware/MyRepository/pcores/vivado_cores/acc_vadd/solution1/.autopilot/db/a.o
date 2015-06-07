@@ -1,0 +1,4 @@
+#!/bin/sh
+lli=${LLVMINTERP-lli}
+exec $lli \
+    /home/sma/Desktop/Projects/C_HLS/acc_vadd/solution1/.autopilot/db/a.o.bc ${1+"$@"}
