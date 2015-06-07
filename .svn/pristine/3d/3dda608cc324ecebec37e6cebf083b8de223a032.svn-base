@@ -1,0 +1,31 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+<sourceFile name="">
+<directive functionLabel="" functionName="acc_vadd" label="">
+<pragma name="INTERFACE">
+<option name="ap_ctrl_none" positionalBoolean="mode" value=""/>
+<option name="port" positionalBoolean="4" value="return"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="acc_vadd" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="depth" value="16"/>
+<option name="port" positionalBoolean="4" value="sI1"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="acc_vadd" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="depth" value="16"/>
+<option name="port" positionalBoolean="4" value="sI2"/>
+</pragma>
+</directive>
+<directive functionLabel="" functionName="acc_vadd" label="">
+<pragma name="INTERFACE">
+<option name="axis" positionalBoolean="mode" value=""/>
+<option name="depth" value="16"/>
+<option name="port" positionalBoolean="4" value="mO1"/>
+</pragma>
+</directive>
+</sourceFile>
+</AutoPilot:ProjectResources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="acc_vadd" xd:componentRef="acc_vadd" xd:initiationInterval="1" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64">
+  <xd:arg xd:name="sI1[]" xd:originalName="sI1" xd:direction="in" xd:interfaceRef="sI1" xd:busTypeRef="axis" xd:arraySize="16" xd:dataWidth="32"/>
+  <xd:arg xd:name="sI2[]" xd:originalName="sI2" xd:direction="in" xd:interfaceRef="sI2" xd:busTypeRef="axis" xd:arraySize="16" xd:dataWidth="32"/>
+  <xd:arg xd:name="mO1[]" xd:originalName="mO1" xd:direction="out" xd:interfaceRef="mO1" xd:busTypeRef="axis" xd:arraySize="16" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
+  <xd:resourceEstimates xd:LUT="34" xd:FF="2" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

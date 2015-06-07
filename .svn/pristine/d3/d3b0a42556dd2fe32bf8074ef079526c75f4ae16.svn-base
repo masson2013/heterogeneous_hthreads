@@ -1,0 +1,433 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:12:34 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Fri Jun  5 12:05:50 2015
+# Process ID: 5196
+# Log file: /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/project/project.runs/synth_1/acc_vadd_hls.vds
+# Journal file: /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/project/project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source acc_vadd_hls.tcl
+# set_param gui.test TreeTableDev
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# set_msg_config -id {Synth 8-256} -limit 10000
+# set_msg_config -id {Synth 8-638} -limit 10000
+# create_project -in_memory -part xc7k325tffg900-2
+# set_property target_language Verilog [current_project]
+# set_property board_part xilinx.com:kc705:part0:1.0 [current_project]
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_property default_lib xil_defaultlib [current_project]
+# read_verilog -library xil_defaultlib /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/project/project.srcs/sources_1/imports/verilog/acc_vadd_hls.v
+WARNING: [filemgmt 20-1763] Vivado Synthesis ignores library specification for Verilog or SystemVerilog files. [/home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/project/project.srcs/sources_1/imports/verilog/acc_vadd_hls.v]
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/project/project.cache/wt [current_project]
+# set_property parent.project_dir /home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/project [current_project]
+# catch { write_hwdef -file acc_vadd_hls.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top acc_vadd_hls -part xc7k325tffg900-2
+Command: synth_design -top acc_vadd_hls -part xc7k325tffg900-2
+
+Starting synthesis...
+
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 864.664 ; gain = 157.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'acc_vadd_hls' [/home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/project/project.srcs/sources_1/imports/verilog/acc_vadd_hls.v:12]
+	Parameter ap_const_logic_1 bound to: 1'b1 
+	Parameter ap_const_logic_0 bound to: 1'b0 
+	Parameter ap_ST_st1_fsm_0 bound to: 3'b000 
+	Parameter ap_ST_st2_fsm_1 bound to: 3'b001 
+	Parameter ap_ST_st3_fsm_2 bound to: 3'b010 
+	Parameter ap_ST_st4_fsm_3 bound to: 3'b011 
+	Parameter ap_ST_st5_fsm_4 bound to: 3'b100 
+	Parameter ap_const_lv1_0 bound to: 1'b0 
+	Parameter ap_const_lv32_1 bound to: 1 - type: integer 
+	Parameter ap_const_lv32_2 bound to: 2 - type: integer 
+	Parameter ap_const_lv4_0 bound to: 4'b0000 
+	Parameter ap_const_lv4_F bound to: 4'b1111 
+	Parameter ap_const_lv32_FFFFFFFF bound to: -1 - type: integer 
+	Parameter ap_const_lv32_0 bound to: 0 - type: integer 
+	Parameter ap_true bound to: 1'b1 
+INFO: [Synth 8-256] done synthesizing module 'acc_vadd_hls' (1#1) [/home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/project/project.srcs/sources_1/imports/verilog/acc_vadd_hls.v:12]
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[31] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[30] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[29] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[28] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[27] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[26] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[25] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[24] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[23] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[22] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[21] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[20] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[19] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[18] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[17] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[16] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[15] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[14] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[13] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[12] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[11] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[10] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[9] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[8] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[7] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[6] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[5] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[4] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[3] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[2] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[1] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port resp_TDATA[0] driven by constant 1
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_WEN_A[3] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_WEN_A[2] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_WEN_A[1] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_WEN_A[0] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[31] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[30] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[29] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[28] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[27] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[26] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[25] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[24] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[23] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[22] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[21] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[20] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[19] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[18] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[17] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[16] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[15] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[14] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[13] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[12] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[11] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[10] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[9] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[8] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[7] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[6] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[5] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[4] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[3] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[2] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[1] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port a_Din_A[0] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_WEN_A[3] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_WEN_A[2] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_WEN_A[1] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_WEN_A[0] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[31] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[30] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[29] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[28] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[27] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[26] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[25] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[24] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[23] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[22] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[21] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[20] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[19] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[18] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[17] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[16] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[15] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[14] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[13] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[12] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[11] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[10] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[9] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[8] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[7] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[6] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[5] driven by constant 0
+WARNING: [Synth 8-3917] design acc_vadd_hls has port b_Din_A[4] driven by constant 0
+INFO: [Common 17-14] Message 'Synth 8-3917' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[31]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[30]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[29]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[28]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[27]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[26]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[25]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[24]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[23]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[22]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[21]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[20]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[19]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[18]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[17]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[16]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[15]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[14]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[13]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[12]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[11]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[10]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[9]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[8]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[7]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[6]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[5]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[4]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[3]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[2]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[1]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 899.547 ; gain = 192.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 909.547 ; gain = 202.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 909.547 ; gain = 202.008
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_3_reg_180_reg' and it is trimmed from '64' to '32' bits. [/home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/project/project.srcs/sources_1/imports/verilog/acc_vadd_hls.v:177]
+INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_fsm_reg' in module 'acc_vadd_hls'
+INFO: [Synth 8-3354] encoded FSM with state register 'ap_CS_fsm_reg' using encoding 'one-hot' in module 'acc_vadd_hls'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  10 Input      6 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module acc_vadd_hls 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  10 Input      6 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Loading clock regions from /home/senma/Xilinx/Vivado/2014.2/data/parts/xilinx/kintex7/kintex7/xc7k325t/ClockRegion.xml
+Loading clock buffers from /home/senma/Xilinx/Vivado/2014.2/data/parts/xilinx/kintex7/kintex7/xc7k325t/ClockBuffers.xml
+Loading clock placement rules from /home/senma/Xilinx/Vivado/2014.2/data/parts/xilinx/kintex7/ClockPlacerRules.xml
+Loading package pin functions from /home/senma/Xilinx/Vivado/2014.2/data/parts/xilinx/kintex7/PinFunctions.xml...
+Loading package from /home/senma/Xilinx/Vivado/2014.2/data/parts/xilinx/kintex7/kintex7/xc7k325t/ffg900/Package.xml
+Loading io standards from /home/senma/Xilinx/Vivado/2014.2/data/./parts/xilinx/kintex7/IOStandards.xml
+Loading device configuration modes from /home/senma/Xilinx/Vivado/2014.2/data/parts/xilinx/kintex7/ConfigModes.xml
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1059.895 ; gain = 352.355
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_3_reg_180_reg' and it is trimmed from '32' to '30' bits. [/home/senma/Desktop/heterogeneous_hthreads_latest/src/hardware/MyRepository/pcores/vivado_cores/acc_vadd_hls/project/project.srcs/sources_1/imports/verilog/acc_vadd_hls.v:177]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port b_Dout_A[31]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[31]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[30]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[29]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[28]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[27]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[26]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[25]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[24]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[23]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[22]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[21]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[20]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[19]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[18]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[17]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[16]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[15]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[14]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[13]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[12]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[11]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[10]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[9]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[8]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[7]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[6]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[5]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[4]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[3]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[2]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[1]
+WARNING: [Synth 8-3331] design acc_vadd_hls has unconnected port result_Dout_A[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1059.895 ; gain = 352.355
+---------------------------------------------------------------------------------
+Finished Parallel Reinfer  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1059.895 ; gain = 352.355
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_2_10/\FSM_onehot_ap_CS_fsm_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (\FSM_onehot_ap_CS_fsm_reg[0] ) is unused and will be removed from module acc_vadd_hls.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1084.934 ; gain = 377.395
+---------------------------------------------------------------------------------
+Finished Parallel Area Opt  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1084.934 ; gain = 377.395
+Finished Parallel Section  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1084.934 ; gain = 377.395
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1084.934 ; gain = 377.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1084.934 ; gain = 377.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1084.934 ; gain = 377.395
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1084.934 ; gain = 377.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1084.934 ; gain = 377.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    31|
+|3     |LUT1   |    34|
+|4     |LUT2   |    32|
+|5     |LUT3   |    34|
+|6     |LUT4   |    38|
+|7     |LUT5   |     7|
+|8     |LUT6   |    25|
+|9     |FDRE   |   133|
+|10    |FDSE   |     1|
+|11    |IBUF   |    99|
+|12    |OBUF   |   247|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   682|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1084.934 ; gain = 377.395
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 282 warnings.
+Synthesis Optimization Complete : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1084.934 ; gain = 377.395
+INFO: [Netlist 29-17] Analyzing 130 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+13 Infos, 168 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1148.938 ; gain = 334.270
+# write_checkpoint acc_vadd_hls.dcp
+# report_utilization -file acc_vadd_hls_utilization_synth.rpt -pb acc_vadd_hls_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.09 . Memory (MB): peak = 1148.938 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  5 12:06:00 2015...
