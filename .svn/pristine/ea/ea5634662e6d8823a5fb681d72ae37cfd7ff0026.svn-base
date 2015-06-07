@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+########################################################################
+##
+## Copyright (c) 2005 Xilinx, Inc.  All rights reserved.
+##
+########################################################################
+-->
+
+<!DOCTYPE doc SYSTEM "../../ipdialog.dtd" [
+	<!ENTITY C_NO_PLB_BURST '
+	<widget id="C_NO_PLB_BURST">
+		<key>C_NO_PLB_BURST</key>
+		<label>No Support for Burst Transactions </label>
+		<tip><![CDATA[False=All core-connect transactions;True=4,8,16 word line transactions]]></tip>
+	</widget>
+	'>
+	<!ENTITY C_DCR_INTFCE '
+	<widget id="C_DCR_INTFCE">
+		<key>C_DCR_INTFCE</key>
+		<label>Include DCR Slave Interface </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_NUM_ADDR_RNG '
+	<widget id="C_NUM_ADDR_RNG">
+		<key>C_NUM_ADDR_RNG</key>
+		<label>Number of PLB Address Ranges </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG0_BASEADDR '
+	<widget id="C_RNG0_BASEADDR">
+		<key>C_RNG0_BASEADDR</key>
+		<label>Range 0 Base Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG0_HIGHADDR '
+	<widget id="C_RNG0_HIGHADDR">
+		<key>C_RNG0_HIGHADDR</key>
+		<label>Range 0 High Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG1_BASEADDR '
+	<widget id="C_RNG1_BASEADDR">
+		<key>C_RNG1_BASEADDR</key>
+		<label>Range 1 Base Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG1_HIGHADDR '
+	<widget id="C_RNG1_HIGHADDR">
+		<key>C_RNG1_HIGHADDR</key>
+		<label>Range 1 High Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG2_BASEADDR '
+	<widget id="C_RNG2_BASEADDR">
+		<key>C_RNG2_BASEADDR</key>
+		<label>Range 2 Base Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG2_HIGHADDR '
+	<widget id="C_RNG2_HIGHADDR">
+		<key>C_RNG2_HIGHADDR</key>
+		<label>Range 2 High Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG3_BASEADDR '
+	<widget id="C_RNG3_BASEADDR">
+		<key>C_RNG3_BASEADDR</key>
+		<label>Range 3 Base Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG3_HIGHADDR '
+	<widget id="C_RNG3_HIGHADDR">
+		<key>C_RNG3_HIGHADDR</key>
+		<label>Range 3 High Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_IRQ_ACTIVE '
+	<widget id="C_IRQ_ACTIVE">
+		<key>C_IRQ_ACTIVE</key>
+		<label>Active IRQ Format </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_BGI_TRANSABORT_CNT '
+	<widget id="C_BGI_TRANSABORT_CNT">
+		<key>C_BGI_TRANSABORT_CNT</key>
+		<label>Number of Clocks To Wait </label>
+		<tip><![CDATA[Number of clocks to wait for OPB Grant before instruction BGI to abort transaction]]></tip>
+	</widget>
+	'>
+	<!ENTITY C_CLK_ASYNC '
+	<widget id="C_CLK_ASYNC">
+		<key>C_CLK_ASYNC</key>
+		<label>Reserved Parameter </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_HIGH_SPEED '
+	<widget id="C_HIGH_SPEED">
+		<key>C_HIGH_SPEED</key>
+		<label>Reserved Parameter </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_INCLUDE_BGI_TRANSABORT '
+	<widget id="C_INCLUDE_BGI_TRANSABORT">
+		<key>C_INCLUDE_BGI_TRANSABORT</key>
+		<label>Reserved Parameter </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_BUS_CLOCK_PERIOD_RATIO '
+	<widget id="C_BUS_CLOCK_PERIOD_RATIO">
+		<key>C_BUS_CLOCK_PERIOD_RATIO</key>
+		<label>Bus Clock Ratio</label>
+		<tip></tip>
+	</widget>
+	'>
+]>
+
+<doc>
+	<view id="System">
+		<display>System</display>
+		<group id="PLB">
+			<display>PLB</display>
+			<item>&C_SPLB_DWIDTH;</item>
+			<item>&C_SPLB_NATIVE_DWIDTH;</item>
+			<item>&C_SPLB_AWIDTH;</item>
+			<item>&C_SPLB_NUM_MASTERS;</item>
+			<item>&C_SPLB_MID_WIDTH;</item>
+			<item>&C_SPLB_P2P;</item>
+			<item>&C_SPLB_SMALLEST_MASTER;</item>
+			<item>&C_BUS_CLOCK_PERIOD_RATIO;</item>
+		</group>
+		<group id="Address">
+			<display>Address</display>
+			<item>&C_NUM_ADDR_RNG;</item>
+			<item>&C_RNG0_BASEADDR;</item>
+			<item>&C_RNG0_HIGHADDR;</item>
+			<item>&C_RNG1_BASEADDR;</item>
+			<item>&C_RNG1_HIGHADDR;</item>
+			<item>&C_RNG2_BASEADDR;</item>
+			<item>&C_RNG2_HIGHADDR;</item>
+			<item>&C_RNG3_BASEADDR;</item>
+			<item>&C_RNG3_HIGHADDR;</item>
+		</group>
+		<group id="Hidden">
+			<display>Hidden</display>
+			<item>&C_FAMILY;</item>
+		</group>
+	</view>
+</doc>

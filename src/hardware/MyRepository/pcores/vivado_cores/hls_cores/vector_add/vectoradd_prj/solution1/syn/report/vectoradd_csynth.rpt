@@ -1,0 +1,179 @@
+
+
+================================================================
+== Vivado HLS Report for 'vectoradd'
+================================================================
+* Date:           Wed Mar 25 11:35:54 2015
+
+* Version:        2014.2 (Build 928826 on Thu Jun 05 17:25:20 PM 2014)
+* Project:        vectoradd_prj
+* Solution:       solution1
+* Product family: virtex7 virtex7_fpv6 
+* Target device:  xc7vx485tffg1761-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +---------+-------+----------+------------+
+    |  Clock  | Target| Estimated| Uncertainty|
+    +---------+-------+----------+------------+
+    |default  |  10.00|      6.41|        1.25|
+    +---------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |             |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- For_Loop   |    ?|    ?|         ?|          -|          -|  inf |    no    |
+        | + add_Loop  |    ?|    ?|         2|          -|          -|     ?|    no    |
+        | + sub_Loop  |    ?|    ?|         2|          -|          -|     ?|    no    |
+        +-------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  |
++-----------------+---------+-------+--------+--------+
+|Expression       |        -|      -|       0|     396|
+|FIFO             |        -|      -|       -|       -|
+|Instance         |        -|      -|       -|       -|
+|Memory           |        -|      -|       -|       -|
+|Multiplexer      |        -|      -|       -|     202|
+|Register         |        -|      -|     296|       -|
++-----------------+---------+-------+--------+--------+
+|Total            |        0|      0|     296|     598|
++-----------------+---------+-------+--------+--------+
+|Available        |     2060|   2800|  607200|  303600|
++-----------------+---------+-------+--------+--------+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |
++-----------------+---------+-------+--------+--------+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------+----------+-------+---+----+------------+------------+
+    |   Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------+----------+-------+---+----+------------+------------+
+    |grp_fu_155_p2     |     +    |      0|  0|  32|          32|           2|
+    |i_2_fu_228_p2     |     +    |      0|  0|  32|          32|           1|
+    |i_3_fu_215_p2     |     +    |      0|  0|  32|          32|           1|
+    |tmp_6_fu_221_p2   |     +    |      0|  0|  32|          32|          32|
+    |tmp_9_fu_208_p2   |     -    |      0|  0|  32|          32|          32|
+    |ap_sig_bdd_101    |    and   |      0|  0|   1|           1|           1|
+    |ap_sig_bdd_87     |    and   |      0|  0|   1|           1|           1|
+    |tmp_10_fu_185_p2  |   icmp   |      0|  0|  39|          32|          32|
+    |tmp_2_fu_169_p2   |   icmp   |      0|  0|  39|          32|           2|
+    |tmp_3_fu_191_p2   |   icmp   |      0|  0|  39|          32|          32|
+    |tmp_7_fu_202_p2   |   icmp   |      0|  0|  39|          32|          32|
+    |tmp_8_fu_174_p2   |   icmp   |      0|  0|  39|          32|          32|
+    |tmp_fu_164_p2     |   icmp   |      0|  0|  39|          32|           1|
+    +------------------+----------+-------+---+----+------------+------------+
+    |Total             |          |      0|  0| 396|         354|         201|
+    +------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------+----+-----------+-----+-----------+
+    |        Name        | LUT| Input Size| Bits| Total Bits|
+    +--------------------+----+-----------+-----+-----------+
+    |a_Addr_A_orig       |  32|          3|   32|         96|
+    |ap_NS_fsm           |   6|          8|    3|         24|
+    |b_Addr_A_orig       |  32|          3|   32|         96|
+    |i_1_reg_134         |  32|          2|   32|         64|
+    |i_reg_144           |  32|          2|   32|         64|
+    |result_Addr_A_orig  |  32|          3|   32|         96|
+    |result_Din_A        |  32|          3|   32|         96|
+    |result_WEN_A        |   4|          2|    4|          8|
+    +--------------------+----+-----------+-----+-----------+
+    |Total               | 202|         26|  199|        544|
+    +--------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------+----+----+-----+-----------+
+    |            Name            | FF | LUT| Bits| Const Bits|
+    +----------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                   |   3|   0|    3|          0|
+    |ap_reg_ioackin_resp_TREADY  |   1|   0|    1|          0|
+    |end_reg_240                 |  32|   0|   32|          0|
+    |i_1_reg_134                 |  32|   0|   32|          0|
+    |i_reg_144                   |  32|   0|   32|          0|
+    |op_reg_234                  |  32|   0|   32|          0|
+    |reg_160                     |  32|   0|   32|          0|
+    |tmp_10_reg_279              |   1|   0|    1|          0|
+    |tmp_2_reg_257               |   1|   0|    1|          0|
+    |tmp_5_reg_286               |  64|   0|   64|          0|
+    |tmp_7_reg_301               |   1|   0|    1|          0|
+    |tmp_reg_253                 |   1|   0|    1|          0|
+    |tmp_s_reg_264               |  64|   0|   64|          0|
+    +----------------------------+----+----+-----+-----------+
+    |Total                       | 296|   0|  296|          0|
+    +----------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------+-----+-----+--------------+--------------+--------------+
+|   RTL Ports   | Dir | Bits|   Protocol   | Source Object|    C Type    |
++---------------+-----+-----+--------------+--------------+--------------+
+|ap_clk         |  in |    1| ap_ctrl_none |   vectoradd  | return value |
+|ap_rst_n       |  in |    1| ap_ctrl_none |   vectoradd  | return value |
+|cmd_TDATA      |  in |   32|     axis     |      cmd     |    pointer   |
+|cmd_TVALID     |  in |    1|     axis     |      cmd     |    pointer   |
+|cmd_TREADY     | out |    1|     axis     |      cmd     |    pointer   |
+|resp_TDATA     | out |   32|     axis     |     resp     |    pointer   |
+|resp_TVALID    | out |    1|     axis     |     resp     |    pointer   |
+|resp_TREADY    |  in |    1|     axis     |     resp     |    pointer   |
+|a_Addr_A       | out |   32|     bram     |       a      |     array    |
+|a_EN_A         | out |    1|     bram     |       a      |     array    |
+|a_WEN_A        | out |    4|     bram     |       a      |     array    |
+|a_Din_A        | out |   32|     bram     |       a      |     array    |
+|a_Dout_A       |  in |   32|     bram     |       a      |     array    |
+|a_Clk_A        | out |    1|     bram     |       a      |     array    |
+|a_Rst_A        | out |    1|     bram     |       a      |     array    |
+|b_Addr_A       | out |   32|     bram     |       b      |     array    |
+|b_EN_A         | out |    1|     bram     |       b      |     array    |
+|b_WEN_A        | out |    4|     bram     |       b      |     array    |
+|b_Din_A        | out |   32|     bram     |       b      |     array    |
+|b_Dout_A       |  in |   32|     bram     |       b      |     array    |
+|b_Clk_A        | out |    1|     bram     |       b      |     array    |
+|b_Rst_A        | out |    1|     bram     |       b      |     array    |
+|result_Addr_A  | out |   32|     bram     |    result    |     array    |
+|result_EN_A    | out |    1|     bram     |    result    |     array    |
+|result_WEN_A   | out |    4|     bram     |    result    |     array    |
+|result_Din_A   | out |   32|     bram     |    result    |     array    |
+|result_Dout_A  |  in |   32|     bram     |    result    |     array    |
+|result_Clk_A   | out |    1|     bram     |    result    |     array    |
+|result_Rst_A   | out |    1|     bram     |    result    |     array    |
++---------------+-----+-----+--------------+--------------+--------------+
+

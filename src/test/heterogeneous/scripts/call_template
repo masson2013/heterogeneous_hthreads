@@ -1,0 +1,25 @@
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Crc"@@@start1 = hthread_time_get()@@@host_crc(package[#].crc_data, package[#].crc_size, package[#].crc_valid)@@@while(*(package[#].crc_valid) !=1)@@@stop1 = hthread_time_get()@@@//printf("package[%i], CRC , with %i size is done\n", #,package[#].crc_size)@@@hthread_time_diff(diff1, stop1, start1)@@@package[#].exe_time=diff1@@@;          40
+
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="sort"@@@start1 = hthread_time_get()@@@host_sort(package[#].sort_data, package[#].sort_size, package[#].sort_valid)@@@while(*(package[#].sort_valid) !=1)@@@stop1 = hthread_time_get()@@@//printf("package[%i], sort , with %i size is done\n", #,package[#].sort_size)@@@hthread_time_diff(diff1, stop1, start1)@@@package[#].exe_time=diff1@@@;          40
+
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="vector"@@@start1 = hthread_time_get()@@@host_vector_add(package[#].dataA, package[#].dataB, package[#].dataC, package[#].vector_size, package[#].vector_valid)@@@while(*(package[#].vector_valid) !=1)@@@stop1 = hthread_time_get()@@@//printf("package[%i], vector , with %i size is done\n", #,package[#].vector_size)@@@hthread_time_diff(diff1, stop1, start1)@@@package[#].exe_time=diff1@@@;          40
+
+
+
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Crc"@@@thread_create(&threads[#], &attr[#], worker_crc_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Sort"@@@thread_create(&threads[#], &attr[#], worker_sort_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Vector"@@@thread_create(&threads[#], &attr[#], worker_vector_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Sort,Crc"@@@thread_create(&threads[#], &attr[#], worker_sort_crc_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);   0	
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Sort,Vector"@@@thread_create(&threads[#], &attr[#], worker_sort_vector_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="CRC, Sort"@@@thread_create(&threads[#], &attr[#], worker_crc_sort_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Crc, Vector"@@@thread_create(&threads[#], &attr[#], worker_crc_vector_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Vector,Crc"@@@thread_create(&threads[#], &attr[#], worker_vector_crc_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Vector, sort"@@@thread_create(&threads[#], &attr[#], worker_vector_sort_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Vector,Crc,sort"@@@thread_create(&threads[#], &attr[#], worker_vector_crc_sort_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Vector,sort, Crc"@@@thread_create(&threads[#], &attr[#], worker_vector_sort_crc_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Crc,vector,sort"@@@thread_create(&threads[#], &attr[#], worker_crc_vector_sort_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="crc,Sort,Vector"@@@thread_create(&threads[#], &attr[#], worker_crc_sort_vector_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Sort,Crc,vector"@@@thread_create(&threads[#], &attr[#], worker_sort_crc_vector_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0
+while(get_num_free_slaves()<6)@@@package[#].thread_type ="Sort,Vector,Crc"@@@thread_create(&threads[#], &attr[#], worker_sort_vector_crc_thread_FUNC_ID, (void *) &package[#], DYNAMIC_HW, 0);  0

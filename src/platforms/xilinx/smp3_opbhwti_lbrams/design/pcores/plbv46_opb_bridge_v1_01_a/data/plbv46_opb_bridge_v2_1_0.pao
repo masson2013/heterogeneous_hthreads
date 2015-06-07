@@ -1,0 +1,15 @@
+# Peripheral Analyze Order (.pao) file for plbv46_opb_bridge_v1_00_a
+#
+# ----- Proc Common Library Files -----------------
+lib proc_common_v3_00_a  all  
+#
+#----- PLB IPIF Library Files ---------------------
+lib plbv46_slave_burst_v1_01_a  all
+
+#----- PLB to OPB Bridge files
+lib plbv46_opb_bridge_v1_01_a opb_master.vhd vhdl
+lib plbv46_opb_bridge_v1_01_a plbv46_opb_bridge.vhd vhdl
+#
+# --- End of list ------------------------------
+#nosort
+

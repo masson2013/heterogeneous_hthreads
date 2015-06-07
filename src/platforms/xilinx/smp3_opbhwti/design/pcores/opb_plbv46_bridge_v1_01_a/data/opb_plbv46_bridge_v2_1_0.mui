@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+########################################################################
+##
+## Copyright (c) 2005 Xilinx, Inc.  All rights reserved.
+##
+########################################################################
+-->
+
+<!DOCTYPE doc SYSTEM "../../ipdialog.dtd" [
+	<!ENTITY C_BUS_CLOCK_PERIOD_RATIO '
+	<widget id="C_BUS_CLOCK_PERIOD_RATIO">
+		<key>C_BUS_CLOCK_PERIOD_RATIO</key>
+		<label>Ratio of PLB to OPB Clock Periods</label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_PREFETCH_TIMEOUT '
+	<widget id="C_PREFETCH_TIMEOUT">
+		<key>C_PREFETCH_TIMEOUT</key>
+		<label>Width of Timeout Counter</label>
+		<tip><![CDATA[Specifies the width of the timeout counter that determines the amount of time (in PLBV46 clocks) the bridge waits for a master to retrieve read prefetch data before the prefetch buffer is flushed and new transactions are accepted again.]]></tip>
+	</widget>
+	'>
+	<!ENTITY C_WR_CACHELINE_SIZE '
+	<widget id="C_WR_CACHELINE_SIZE">
+		<key>C_WR_CACHELINE_SIZE</key>
+		<label>Size of Write Cache Line </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_OPB_REG_INTFC '
+	<widget id="C_OPB_REG_INTFC">
+		<key>C_OPB_REG_INTFC</key>
+		<label>Error Register Access Interface </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_ABORT_DLY_CNT '
+	<widget id="C_ABORT_DLY_CNT">
+		<key>C_ABORT_DLY_CNT</key>
+		<label>Number of OPB Clocks Before Abort </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_NUM_ADDR_RNG '
+	<widget id="C_NUM_ADDR_RNG">
+		<key>C_NUM_ADDR_RNG</key>
+		<label>Number of Address Ranges Present </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG0_BASEADDR '
+	<widget id="C_RNG0_BASEADDR">
+		<key>C_RNG0_BASEADDR</key>
+		<label>Range 0 Base Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG0_HIGHADDR '
+	<widget id="C_RNG0_HIGHADDR">
+		<key>C_RNG0_HIGHADDR</key>
+		<label>Range 0 High Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG1_BASEADDR '
+	<widget id="C_RNG1_BASEADDR">
+		<key>C_RNG1_BASEADDR</key>
+		<label>Range 1 Base Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG1_HIGHADDR '
+	<widget id="C_RNG1_HIGHADDR">
+		<key>C_RNG1_HIGHADDR</key>
+		<label>Range 1 High Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG2_BASEADDR '
+	<widget id="C_RNG2_BASEADDR">
+		<key>C_RNG2_BASEADDR</key>
+		<label>Range 1 Base Adress </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG2_HIGHADDR '
+	<widget id="C_RNG2_HIGHADDR">
+		<key>C_RNG2_HIGHADDR</key>
+		<label>Range 2 High Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG3_BASEADDR '
+	<widget id="C_RNG3_BASEADDR">
+		<key>C_RNG3_BASEADDR</key>
+		<label>Range 3 Base Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG3_HIGHADDR '
+	<widget id="C_RNG3_HIGHADDR">
+		<key>C_RNG3_HIGHADDR</key>
+		<label>Range 3 High Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG0_PREFETCH '
+	<widget id="C_RNG0_PREFETCH">
+		<key>C_RNG0_PREFETCH</key>
+		<label>Range 0 is Prefetchable </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG1_PREFETCH '
+	<widget id="C_RNG1_PREFETCH">
+		<key>C_RNG1_PREFETCH</key>
+		<label>Range 1 is Prefetchable </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG2_PREFETCH '
+	<widget id="C_RNG2_PREFETCH">
+		<key>C_RNG2_PREFETCH</key>
+		<label>Range 2 is Prefetchable </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG3_PREFETCH '
+	<widget id="C_RNG3_PREFETCH">
+		<key>C_RNG3_PREFETCH</key>
+		<label>Range 3 is Prefetchable </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG0_BURST '
+	<widget id="C_RNG0_BURST">
+		<key>C_RNG0_BURST</key>
+		<label>Range 0 Supports Burst </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG1_BURST '
+	<widget id="C_RNG1_BURST">
+		<key>C_RNG1_BURST</key>
+		<label>Range 1 Supports Burst </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG2_BURST '
+	<widget id="C_RNG2_BURST">
+		<key>C_RNG2_BURST</key>
+		<label>Range 2 Supports Burst </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG3_BURST '
+	<widget id="C_RNG3_BURST">
+		<key>C_RNG3_BURST</key>
+		<label>Range 3 Supports Burst </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG0_LINE '
+	<widget id="C_RNG0_LINE">
+		<key>C_RNG0_LINE</key>
+		<label>Range 0 Supports Cache Line Writes </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG1_LINE '
+	<widget id="C_RNG1_LINE">
+		<key>C_RNG1_LINE</key>
+		<label>Range 1 Supports Cache Line Writes </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG2_LINE '
+	<widget id="C_RNG2_LINE">
+		<key>C_RNG2_LINE</key>
+		<label>Range 2 Supports Cache Line Writes </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_RNG3_LINE '
+	<widget id="C_RNG3_LINE">
+		<key>C_RNG3_LINE</key>
+		<label>Range 3 Supports Cache Line Writes </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_OPB_BASEADDR '
+	<widget id="C_OPB_BASEADDR">
+		<key>C_OPB_BASEADDR</key>
+		<label>OPB Register Base Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_OPB_HIGHADDR '
+	<widget id="C_OPB_HIGHADDR">
+		<key>C_OPB_HIGHADDR</key>
+		<label>OPB Register High Address </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_PLB_PRIORITY '
+	<widget id="C_PLB_PRIORITY">
+		<key>C_PLB_PRIORITY</key>
+		<label>PLB Master Priority </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_IRQ_ACTIVE '
+	<widget id="C_IRQ_ACTIVE">
+		<key>C_IRQ_ACTIVE</key>
+		<label>Active IRQ Format </label>
+		<tip></tip>
+	</widget>
+	'>
+	<!ENTITY C_SWR_COUNT '
+	<widget id="C_SWR_COUNT">
+		<key>C_SWR_COUNT</key>
+		<label>Software Reset Count </label>
+		<tip></tip>
+	</widget>
+	'>
+]>
+
+<doc>
+	<view id="User">
+		<display>User</display>
+		<group id="Bridge_Features">
+			<display>Bridge Features</display>
+			<item>&C_PREFETCH_TIMEOUT;</item>
+			<item>&C_NUM_ADDR_RNG;</item>
+			<item>&C_BUS_CLOCK_PERIOD_RATIO;</item>
+        </group>
+		<group id="PLB">
+			<display>PLB</display>
+			<item>&C_MPLB_AWIDTH;</item>
+			<item>&C_MPLB_DWIDTH;</item>
+			<item>&C_MPLB_NATIVE_DWIDTH;</item>
+        </group>
+	</view>
+	<view id="System">
+		<display>System</display>
+		<group id="Address">
+			<display>Address</display>
+			<item>&C_RNG0_BASEADDR;</item>
+			<item>&C_RNG0_HIGHADDR;</item>
+			<item>&C_RNG1_BASEADDR;</item>
+			<item>&C_RNG1_HIGHADDR;</item>
+			<item>&C_RNG2_BASEADDR;</item>
+			<item>&C_RNG2_HIGHADDR;</item>
+			<item>&C_RNG3_BASEADDR;</item>
+			<item>&C_RNG3_HIGHADDR;</item>
+        </group>
+		<group id="Hidden">
+			<display>Hidden</display>
+			<item>&C_FAMILY;</item>
+		</group>
+	</view>
+</doc>

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 928826 on Thu Jun  5 17:55:10 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Mon Dec 22 16:32:23 2014
+# Process ID: 11883
+# Log file: /home/abazar63/hthread/src/hardware/MyRepository/pcores/vivado_cores/hls_cores/vector_add/vectoradd_prj/solution1/impl/ip/vivado.log
+# Journal file: /home/abazar63/hthread/src/hardware/MyRepository/pcores/vivado_cores/hls_cores/vector_add/vectoradd_prj/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

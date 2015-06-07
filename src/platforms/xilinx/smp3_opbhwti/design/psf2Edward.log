@@ -1,0 +1,628 @@
+WARNING:EDK:2028 - Option "CORE_STATE" in
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hvm_core_v1_00_a/data
+   /hvm_core_v2_1_0.mpd line 7  is deprecated. Please use Option
+   ARCH_SUPPORT_MAP instead. 
+WARNING:EDK:2028 - Option "CORE_STATE" in
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_SynchManager_v1_0
+   0_c/data/opb_SynchManager_v2_1_0.mpd line 22  is deprecated. Please use
+   Option ARCH_SUPPORT_MAP instead. 
+WARNING:EDK:2028 - Option "CORE_STATE" in
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 22  is deprecated. Please use Option
+   ARCH_SUPPORT_MAP instead. 
+WARNING:EDK:2028 - Option "ARCH_SUPPORT" in
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/util_intr_split_v1_00
+   _a/data/util_intr_split_v2_1_0.mpd line 26  is deprecated. Please use Option
+   ARCH_SUPPORT_MAP instead. 
+WARNING:EDK:2028 - Option "CORE_STATE" in
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/util_intr_split_v1_00
+   _a/data/util_intr_split_v2_1_0.mpd line 28  is deprecated. Please use Option
+   ARCH_SUPPORT_MAP instead. 
+WARNING:EDK:2028 - Option "CORE_STATE" in
+   /home/abazar63/hthread/src/hardware/XilinxProcessorIP/pcores/opb_ac97_v1_00_a
+   /data/opb_ac97_v2_1_0.mpd line 18  is deprecated. Please use Option
+   ARCH_SUPPORT_MAP instead. 
+WARNING:EDK:2028 - Option "CORE_STATE" in
+   /home/abazar63/hthread/src/hardware/XilinxProcessorIP/pcores/opb_ac97_v2_00_a
+   /data/opb_ac97_v2_1_0.mpd line 18  is deprecated. Please use Option
+   ARCH_SUPPORT_MAP instead. 
+
+Checking platform configuration ...
+IPNAME:plb_v46 INSTANCE:main_bus -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+27 - 8 master(s) : 10 slave(s)
+IPNAME:lmb_v10 INSTANCE:ilmb0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+66 - 1 master(s) : 1 slave(s)
+IPNAME:lmb_v10 INSTANCE:dlmb0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+73 - 1 master(s) : 1 slave(s)
+IPNAME:plb_v46 INSTANCE:group1_bus -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+110 - 2 master(s) : 2 slave(s)
+IPNAME:fsl_v20 INSTANCE:mb2thrd1_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+179 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:mb2thrd1_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+187 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2mb1_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+195 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2mb1_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+203 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2mb1_2 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+211 - 1 master(s) : 1 slave(s)
+IPNAME:lmb_v10 INSTANCE:ilmb1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+219 - 1 master(s) : 1 slave(s)
+IPNAME:lmb_v10 INSTANCE:dlmb1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+226 - 1 master(s) : 1 slave(s)
+IPNAME:plb_v46 INSTANCE:group2_bus -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+260 - 2 master(s) : 2 slave(s)
+IPNAME:fsl_v20 INSTANCE:mb2thrd2_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+329 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:mb2thrd2_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+337 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2mb2_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+345 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2mb2_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+353 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2mb2_2 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+361 - 1 master(s) : 1 slave(s)
+IPNAME:lmb_v10 INSTANCE:ilmb2 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+369 - 1 master(s) : 1 slave(s)
+IPNAME:lmb_v10 INSTANCE:dlmb2 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+376 - 1 master(s) : 1 slave(s)
+IPNAME:plb_v46 INSTANCE:group3_bus -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+410 - 2 master(s) : 2 slave(s)
+IPNAME:fsl_v20 INSTANCE:mb2thrd3_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+479 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:mb2thrd3_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+487 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2mb3_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+495 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2mb3_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+503 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2mb3_2 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+511 - 1 master(s) : 1 slave(s)
+IPNAME:lmb_v10 INSTANCE:ilmb3 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+519 - 1 master(s) : 1 slave(s)
+IPNAME:lmb_v10 INSTANCE:dlmb3 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+526 - 1 master(s) : 1 slave(s)
+IPNAME:plb_v46 INSTANCE:vhwti_bus1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+561 - 1 master(s) : 3 slave(s)
+IPNAME:plb_v46 INSTANCE:core_bus -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+691 - 4 master(s) : 6 slave(s)
+IPNAME:opb_v20 INSTANCE:hwti_bus -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+966 - 4 master(s) : 4 slave(s)
+IPNAME:fsl_v20 INSTANCE:intrfc2thrd0_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1030 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:intrfc2thrd0_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1038 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2intrfc0_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1046 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2intrfc0_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1054 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2intrfc0_2 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1062 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:intrfc2thrd1_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1099 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:intrfc2thrd1_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1107 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2intrfc1_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1115 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2intrfc1_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1123 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2intrfc1_2 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1131 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:intrfc2thrd2_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1168 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:intrfc2thrd2_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1176 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2intrfc2_0 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1184 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2intrfc2_1 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1192 - 1 master(s) : 1 slave(s)
+IPNAME:fsl_v20 INSTANCE:thrd2intrfc2_2 -
+/home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs line
+1200 - 1 master(s) : 1 slave(s)
+
+Checking port drivers...
+WARNING:EDK:2098 - PORT:IWAIT CONNECTOR:ilmb0_LMB_Wait -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 352 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:ICE CONNECTOR:ilmb0_LMB_CE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 353 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:IUE CONNECTOR:ilmb0_LMB_UE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 354 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DWAIT CONNECTOR:dlmb0_LMB_Wait -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 390 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DCE CONNECTOR:dlmb0_LMB_CE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 391 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DUE CONNECTOR:dlmb0_LMB_UE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 392 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:IWAIT CONNECTOR:ilmb1_LMB_Wait -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 352 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:ICE CONNECTOR:ilmb1_LMB_CE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 353 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:IUE CONNECTOR:ilmb1_LMB_UE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 354 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DWAIT CONNECTOR:dlmb1_LMB_Wait -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 390 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DCE CONNECTOR:dlmb1_LMB_CE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 391 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DUE CONNECTOR:dlmb1_LMB_UE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 392 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:IWAIT CONNECTOR:ilmb2_LMB_Wait -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 352 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:ICE CONNECTOR:ilmb2_LMB_CE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 353 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:IUE CONNECTOR:ilmb2_LMB_UE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 354 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DWAIT CONNECTOR:dlmb2_LMB_Wait -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 390 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DCE CONNECTOR:dlmb2_LMB_CE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 391 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DUE CONNECTOR:dlmb2_LMB_UE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 392 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:IWAIT CONNECTOR:ilmb3_LMB_Wait -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 352 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:ICE CONNECTOR:ilmb3_LMB_CE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 353 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:IUE CONNECTOR:ilmb3_LMB_UE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 354 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DWAIT CONNECTOR:dlmb3_LMB_Wait -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 390 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DCE CONNECTOR:dlmb3_LMB_CE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 391 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:DUE CONNECTOR:dlmb3_LMB_UE -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 392 - No driver found. Port will be driven
+   to GND!
+WARNING:EDK:2098 - PORT:bscan_tdo1 CONNECTOR:bscan_tdo1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_a/data/m
+   dm_v2_1_0.mpd line 231 - No driver found. Port will be driven to GND!
+WARNING:EDK:2099 - PORT:FSL0_S_CLK CONNECTOR:thrd2mb1_0_FSL_S_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 615 - floating connection!
+WARNING:EDK:2099 - PORT:FSL0_M_CLK CONNECTOR:mb2thrd1_0_FSL_M_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 620 - floating connection!
+WARNING:EDK:2099 - PORT:FSL1_S_CLK CONNECTOR:thrd2mb1_1_FSL_S_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 625 - floating connection!
+WARNING:EDK:2099 - PORT:FSL1_M_CLK CONNECTOR:mb2thrd1_1_FSL_M_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 630 - floating connection!
+WARNING:EDK:2099 - PORT:FSL2_S_CLK CONNECTOR:thrd2mb1_2_FSL_S_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 635 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_value CONNECTOR:Tintrfc2thrd_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 49 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_value CONNECTOR:Tintrfc2thrd_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 49 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_value CONNECTOR:Tintrfc2thrd_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 49 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_value CONNECTOR:Tintrfc2thrd_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 49 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_value CONNECTOR:Tintrfc2thrd_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 49 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_value CONNECTOR:Tintrfc2thrd_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 49 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_function CONNECTOR:Tintrfc2thrd_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 50 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_function CONNECTOR:Tintrfc2thrd_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 50 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_function CONNECTOR:Tintrfc2thrd_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 50 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_function CONNECTOR:Tintrfc2thrd_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 50 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_function CONNECTOR:Tintrfc2thrd_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 50 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_function CONNECTOR:Tintrfc2thrd_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 50 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_goWait CONNECTOR:Tintrfc2thrd_goWait -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 51 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_goWait CONNECTOR:Tintrfc2thrd_goWait -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 51 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_goWait CONNECTOR:Tintrfc2thrd_goWait -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 51 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_goWait CONNECTOR:Tintrfc2thrd_goWait -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 51 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_goWait CONNECTOR:Tintrfc2thrd_goWait -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 51 - floating connection!
+WARNING:EDK:2099 - PORT:Tintrfc2thrd_goWait CONNECTOR:Tintrfc2thrd_goWait -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 51 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_address CONNECTOR:Tthrd2intrfc_address -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 52 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_address CONNECTOR:Tthrd2intrfc_address -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 52 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_address CONNECTOR:Tthrd2intrfc_address -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 52 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_address CONNECTOR:Tthrd2intrfc_address -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 52 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_address CONNECTOR:Tthrd2intrfc_address -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 52 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_address CONNECTOR:Tthrd2intrfc_address -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 52 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_value CONNECTOR:Tthrd2intrfc_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 53 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_value CONNECTOR:Tthrd2intrfc_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 53 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_value CONNECTOR:Tthrd2intrfc_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 53 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_value CONNECTOR:Tthrd2intrfc_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 53 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_value CONNECTOR:Tthrd2intrfc_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 53 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_value CONNECTOR:Tthrd2intrfc_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 53 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_function CONNECTOR:Tthrd2intrfc_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 54 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_function CONNECTOR:Tthrd2intrfc_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 54 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_function CONNECTOR:Tthrd2intrfc_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 54 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_function CONNECTOR:Tthrd2intrfc_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 54 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_function CONNECTOR:Tthrd2intrfc_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 54 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_function CONNECTOR:Tthrd2intrfc_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 54 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_opcode CONNECTOR:Tthrd2intrfc_opcode -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 55 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_opcode CONNECTOR:Tthrd2intrfc_opcode -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 55 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_opcode CONNECTOR:Tthrd2intrfc_opcode -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 55 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_opcode CONNECTOR:Tthrd2intrfc_opcode -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 55 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_opcode CONNECTOR:Tthrd2intrfc_opcode -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 55 - floating connection!
+WARNING:EDK:2099 - PORT:Tthrd2intrfc_opcode CONNECTOR:Tthrd2intrfc_opcode -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 55 - floating connection!
+WARNING:EDK:2099 - PORT:Ttimer CONNECTOR:Ttimer -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 56 - floating connection!
+WARNING:EDK:2099 - PORT:Ttimer CONNECTOR:Ttimer -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 56 - floating connection!
+WARNING:EDK:2099 - PORT:Ttimer CONNECTOR:Ttimer -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 56 - floating connection!
+WARNING:EDK:2099 - PORT:Ttimer CONNECTOR:Ttimer -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_v1_00_a/data/h
+   w_acc_v2_1_0.mpd line 56 - floating connection!
+WARNING:EDK:2099 - PORT:Ttimer CONNECTOR:Ttimer -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_two_v1_00_a/da
+   ta/hw_acc_two_v2_1_0.mpd line 56 - floating connection!
+WARNING:EDK:2099 - PORT:Ttimer CONNECTOR:Ttimer -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/hw_acc_three_v1_00_a/
+   data/hw_acc_three_v2_1_0.mpd line 56 - floating connection!
+WARNING:EDK:2099 - PORT:FSL0_S_CLK CONNECTOR:thrd2mb2_0_FSL_S_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 615 - floating connection!
+WARNING:EDK:2099 - PORT:FSL0_M_CLK CONNECTOR:mb2thrd2_0_FSL_M_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 620 - floating connection!
+WARNING:EDK:2099 - PORT:FSL1_S_CLK CONNECTOR:thrd2mb2_1_FSL_S_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 625 - floating connection!
+WARNING:EDK:2099 - PORT:FSL1_M_CLK CONNECTOR:mb2thrd2_1_FSL_M_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 630 - floating connection!
+WARNING:EDK:2099 - PORT:FSL2_S_CLK CONNECTOR:thrd2mb2_2_FSL_S_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 635 - floating connection!
+WARNING:EDK:2099 - PORT:FSL0_S_CLK CONNECTOR:thrd2mb3_0_FSL_S_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 615 - floating connection!
+WARNING:EDK:2099 - PORT:FSL0_M_CLK CONNECTOR:mb2thrd3_0_FSL_M_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 620 - floating connection!
+WARNING:EDK:2099 - PORT:FSL1_S_CLK CONNECTOR:thrd2mb3_1_FSL_S_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 625 - floating connection!
+WARNING:EDK:2099 - PORT:FSL1_M_CLK CONNECTOR:mb2thrd3_1_FSL_M_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 630 - floating connection!
+WARNING:EDK:2099 - PORT:FSL2_S_CLK CONNECTOR:thrd2mb3_2_FSL_S_Clk -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 635 - floating connection!
+WARNING:EDK:2099 - PORT:Semaphore_Reset CONNECTOR:net_gnd -
+   /home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs
+   line 757 - floating connection!
+WARNING:EDK:2099 - PORT:SpinLock_Reset CONNECTOR:net_gnd -
+   /home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs
+   line 759 - floating connection!
+WARNING:EDK:2099 - PORT:reset_port0 CONNECTOR:hthread_rst_tm -
+   /home/abazar63/hthread/src/platforms/xilinx/smp3_opbhwti/design/system.mhs
+   line 793 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_tdi CONNECTOR:bscan_tdi -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_a/data/m
+   dm_v2_1_0.mpd line 224 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_reset CONNECTOR:bscan_reset -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_a/data/m
+   dm_v2_1_0.mpd line 225 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_shift CONNECTOR:bscan_shift -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_a/data/m
+   dm_v2_1_0.mpd line 226 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_update CONNECTOR:bscan_update -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_a/data/m
+   dm_v2_1_0.mpd line 227 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_capture CONNECTOR:bscan_capture -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_a/data/m
+   dm_v2_1_0.mpd line 228 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_sel1 CONNECTOR:bscan_sel1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_a/data/m
+   dm_v2_1_0.mpd line 229 - floating connection!
+WARNING:EDK:2099 - PORT:bscan_drck1 CONNECTOR:bscan_drck1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_a/data/m
+   dm_v2_1_0.mpd line 230 - floating connection!
+WARNING:EDK:2099 - PORT:OPBintrfc2thrd_value CONNECTOR:OPBintrfc2thrd_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 112 - floating connection!
+WARNING:EDK:2099 - PORT:OPBintrfc2thrd_value CONNECTOR:OPBintrfc2thrd_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 112 - floating connection!
+WARNING:EDK:2099 - PORT:OPBintrfc2thrd_value CONNECTOR:OPBintrfc2thrd_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 112 - floating connection!
+WARNING:EDK:2099 - PORT:OPBintrfc2thrd_function
+   CONNECTOR:OPBintrfc2thrd_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 113 - floating connection!
+WARNING:EDK:2099 - PORT:OPBintrfc2thrd_function
+   CONNECTOR:OPBintrfc2thrd_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 113 - floating connection!
+WARNING:EDK:2099 - PORT:OPBintrfc2thrd_function
+   CONNECTOR:OPBintrfc2thrd_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 113 - floating connection!
+WARNING:EDK:2099 - PORT:OPBintrfc2thrd_goWait CONNECTOR:OPBintrfc2thrd_goWait -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 114 - floating connection!
+WARNING:EDK:2099 - PORT:OPBintrfc2thrd_goWait CONNECTOR:OPBintrfc2thrd_goWait -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 114 - floating connection!
+WARNING:EDK:2099 - PORT:OPBintrfc2thrd_goWait CONNECTOR:OPBintrfc2thrd_goWait -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 114 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_address CONNECTOR:OPBthrd2intrfc_address
+   -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 115 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_address CONNECTOR:OPBthrd2intrfc_address
+   -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 115 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_address CONNECTOR:OPBthrd2intrfc_address
+   -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 115 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_value CONNECTOR:OPBthrd2intrfc_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 116 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_value CONNECTOR:OPBthrd2intrfc_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 116 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_value CONNECTOR:OPBthrd2intrfc_value -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 116 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_function
+   CONNECTOR:OPBthrd2intrfc_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 117 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_function
+   CONNECTOR:OPBthrd2intrfc_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 117 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_function
+   CONNECTOR:OPBthrd2intrfc_function -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 117 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_opcode CONNECTOR:OPBthrd2intrfc_opcode -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 118 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_opcode CONNECTOR:OPBthrd2intrfc_opcode -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 118 - floating connection!
+WARNING:EDK:2099 - PORT:OPBthrd2intrfc_opcode CONNECTOR:OPBthrd2intrfc_opcode -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 118 - floating connection!
+WARNING:EDK:2099 - PORT:OPBtimer CONNECTOR:OPBtimer -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 119 - floating connection!
+WARNING:EDK:2099 - PORT:OPBtimer CONNECTOR:OPBtimer -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 119 - floating connection!
+WARNING:EDK:2099 - PORT:OPBtimer CONNECTOR:OPBtimer -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 119 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_ABus CONNECTOR:OPBM_ABus -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 121 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_ABus CONNECTOR:OPBM_ABus -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 121 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_ABus CONNECTOR:OPBM_ABus -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 121 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_request CONNECTOR:OPBM_request -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 122 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_request CONNECTOR:OPBM_request -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 122 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_request CONNECTOR:OPBM_request -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 122 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_MGrant CONNECTOR:OPBM_MGrant -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 123 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_MGrant CONNECTOR:OPBM_MGrant -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 123 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_MGrant CONNECTOR:OPBM_MGrant -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 123 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_xferAck CONNECTOR:OPBM_xferAck -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 124 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_xferAck CONNECTOR:OPBM_xferAck -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 124 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_xferAck CONNECTOR:OPBM_xferAck -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 124 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_select CONNECTOR:OPBM_select -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 125 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_select CONNECTOR:OPBM_select -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 125 - floating connection!
+WARNING:EDK:2099 - PORT:OPBM_select CONNECTOR:OPBM_select -
+   /home/abazar63/hthread/src/hardware/MyRepository/pcores/opb_hwti_v3_00_a/data
+   /opb_hwti_v2_1_0.mpd line 125 - floating connection!
+
+Performing Clock DRCs...
+
+Performing Reset DRCs...
+
+Overriding system level properties...
+
+Running system level update procedures...
+
+Running UPDATE Tcl procedures for OPTION SYSLEVEL_UPDATE_PROC...
+
+Running system level DRCs...
+
+Performing System level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION SYSLEVEL_DRC_PROC...
+Conversion to XML complete.

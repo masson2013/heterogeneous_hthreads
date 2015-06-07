@@ -1,0 +1,67 @@
+#HDRS += $(TOP)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)design$(SLASH)microblaze0$(SLASH)include ;
+
+if $(SLAVE_COMPILATION) != "yes"
+{
+HDRS += $(TOP)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)include ;
+HDRS += $(TOP)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)design$(SLASH)microblaze0$(SLASH)include ;
+}
+else
+{
+HDRS += $(TOP)$(SLASH)$(DOTDOT)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)include ;
+HDRS += $(TOP)$(SLASH)$(DOTDOT)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)design$(SLASH)microblaze1$(SLASH)include ;
+}
+
+
+
+#USER_LINK += -L$(TOP)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)design$(SLASH)microblaze0$(SLASH)lib ;
+if $(SLAVE_COMPILATION) != "yes"
+{
+USER_LINK += -L$(TOP)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)design$(SLASH)microblaze0$(SLASH)lib ;
+}
+else
+{
+USER_LINK += -L$(TOP)$(SLASH)$(DOTDOT)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)design$(SLASH)microblaze1$(SLASH)lib ;
+## Add more debugging information ##
+CCFLAGS     += -ggdb ;
+}
+
+
+HDRS += $(TOP)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)include ;
+USER_LIBS   += -Wl,--start-group -lhthread -lm -lc -lgcc -Wl,--end-group -lhthread -lxil -lhthread ;
+
+if $(SLAVE_COMPILATION) != "yes"
+{
+CCFLAGS += -nodefaultlibs -nostartfiles ; #-fno-omit-frame-pointer ;
+}
+
+#CCFLAGS += -nodefaultlibs -nostartfiles ; #-fno-omit-frame-pointer ;
+
+
+#USER_LINK += -Wl,-T -Wl,$(TOP)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)config$(SLASH)linkscript.ld ;
+if $(SLAVE_COMPILATION) != "yes"
+{
+USER_LINK += -Wl,-T -Wl,$(TOP)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)config$(SLASH)linkscript.ld ;
+}
+else
+{
+USER_LINK += -Wl,-T -Wl,$(TOP)$(SLASH)src$(SLASH)platforms$(SLASH)$(PLATFORM_VENDOR)$(SLASH)$(PLATFORM_BOARD)$(SLASH)config$(SLASH)linkscript_slave.ld ;
+}
+
+#CCFLAGS     += -mcpu=v8.00.a ;
+#CCFLAGS     += -DHT_ENABLE_MB_ICACHE ;
+
+if $(SLAVE_COMPILATION) != "yes"
+{
+CCFLAGS     += -mcpu=v8.00.a ;
+# Uncomment the following line to enable instruction caching on the MicroBlaze
+CCFLAGS     += -DHT_ENABLE_MB_ICACHE ;
+}
+else
+{
+CCFLAGS     += -mcpu=v8.00.a -fno-jump-tables ;
+}
+
+CCFLAGS     += -mhard-float ;
+CCFLAGS     += -mxl-barrel-shift ;
+CCFLAGS     += -mno-xl-soft-mul ;
+CCFLAGS     += -mno-xl-soft-div ;

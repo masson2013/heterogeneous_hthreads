@@ -1,0 +1,734 @@
+
+bitinit version Xilinx EDK 12.3 Build EDK_MS3.70d
+Copyright (c) Xilinx Inc. 2002.
+
+Parsing MHS File system.mhs...
+
+Overriding IP level properties ...
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 143 - tcl is overriding PARAMETER C_BASEFAMILY value to
+   virtex6
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 170 - tcl is overriding PARAMETER C_IODELAY_GRP value to
+   mpmc_0
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 206 - tcl is overriding PARAMETER C_USE_MIG_V6_PHY value
+   to 1
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 254 - tcl is overriding PARAMETER C_MEM_PART_DATA_DEPTH
+   value to 64
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 255 - tcl is overriding PARAMETER C_MEM_PART_DATA_WIDTH
+   value to 16
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 256 - tcl is overriding PARAMETER
+   C_MEM_PART_NUM_BANK_BITS value to 3
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 258 - tcl is overriding PARAMETER
+   C_MEM_PART_NUM_COL_BITS value to 10
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 259 - tcl is overriding PARAMETER C_MEM_PART_TRAS value
+   to 37500
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 260 - tcl is overriding PARAMETER C_MEM_PART_TRASMAX
+   value to 70200000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 261 - tcl is overriding PARAMETER C_MEM_PART_TRC value
+   to 50625
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 262 - tcl is overriding PARAMETER C_MEM_PART_TRCD value
+   to 13130
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 264 - tcl is overriding PARAMETER C_MEM_PART_TWR value
+   to 15000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 265 - tcl is overriding PARAMETER C_MEM_PART_TRP value
+   to 13130
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 267 - tcl is overriding PARAMETER C_MEM_PART_TRRD value
+   to 7500
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 268 - tcl is overriding PARAMETER C_MEM_PART_TRFC value
+   to 110000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 269 - tcl is overriding PARAMETER C_MEM_PART_TREFI value
+   to 7800000
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 271 - tcl is overriding PARAMETER C_MEM_PART_TCCD value
+   to 4
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 272 - tcl is overriding PARAMETER C_MEM_PART_TWTR value
+   to 7500
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 278 - tcl is overriding PARAMETER C_MEM_PART_CAS_A_FMAX
+   value to 400.0
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 279 - tcl is overriding PARAMETER C_MEM_PART_CAS_A value
+   to 6
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 280 - tcl is overriding PARAMETER C_MEM_PART_CAS_B_FMAX
+   value to 533.0
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 281 - tcl is overriding PARAMETER C_MEM_PART_CAS_B value
+   to 7
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 282 - tcl is overriding PARAMETER C_MEM_PART_CAS_C_FMAX
+   value to 1.0
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 284 - tcl is overriding PARAMETER C_MEM_PART_CAS_D_FMAX
+   value to 1.0
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 297 - tcl is overriding PARAMETER C_MEM_BANKADDR_WIDTH
+   value to 3
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 300 - tcl is overriding PARAMETER C_MEM_DM_WIDTH value
+   to 4
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 301 - tcl is overriding PARAMETER C_MEM_DQS_WIDTH value
+   to 4
+
+Computing clock values...
+INFO:EDK:1039 - Did not update the value for parameter:
+   mb2thrd1_0:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   mb2thrd1_1:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   thrd2mb1_0:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   thrd2mb1_1:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   thrd2mb1_2:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   mb2thrd2_0:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   mb2thrd2_1:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   thrd2mb2_0:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   thrd2mb2_1:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   thrd2mb2_2:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   mb2thrd3_0:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   mb2thrd3_1:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   thrd2mb3_0:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   thrd2mb3_1:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+INFO:EDK:1039 - Did not update the value for parameter:
+   thrd2mb3_2:C_READ_CLOCK_PERIOD. Top-level frequency could not be propagated
+   to this IP. Please make sure that you have specified the frequency of the
+   top-level clock port, and that the clocks are properly connected.
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze0
+  (0000000000-0x00003fff) dlmb_cntlr0	dlmb0
+  (0000000000-0x00003fff) ilmb_cntlr0	ilmb0
+  (0x11000000-0x1103ffff) thread_manager	host_bus->host_core_bridge->core_bus
+  (0x11100000-0x1117ffff) cond_vars	host_bus->host_core_bridge->core_bus
+  (0x12000000-0x12ffffff) scheduler	host_bus->host_core_bridge->core_bus
+  (0x13000000-0x13ffffff) sync_manager	host_bus->host_core_bridge->core_bus
+  (0x10000000-0x17ffffff) host_core_bridge	host_bus
+  (0x24002000-0x24002fff) xps_timer_0	host_bus
+  (0x24030000-0x2403ffff) plb_hthreads_timer_0	host_bus
+  (0x24040000-0x2404ffff) xps_intc_0	host_bus
+  (0x70000000-0x7000ffff) host_main_bridge	host_bus
+  (0x70010000-0x7001ffff) host_core_bridge	host_bus
+  (0x84000000-0x8400ffff) RS232_Uart_1	host_bus->host_main_bridge->main_bus
+  (0x84010000-0x8401ffff) mdm_0	host_bus->host_main_bridge->main_bus
+  (0x84050000-0x8405ffff) xps_central_dma_0	host_bus->host_main_bridge->main_bus
+  (0x84200000-0x8420ffff)
+plb_hthread_reset_core_0	host_bus->host_main_bridge->main_bus
+  (0x84000000-0x84ffffff) host_main_bridge	host_bus
+  (0xa0000000-0xafffffff) mpmc_0	host_bus
+  (0xa0000000-0xafffffff) mpmc_0	microblaze0_IXCL
+Address Map for Processor microblaze1
+  (0000000000-0x00003fff) dlmb_cntlr1	dlmb1
+  (0000000000-0x00003fff) ilmb_cntlr1	ilmb1
+  (0x11000000-0x1103ffff)
+thread_manager	group1_bus->group1_main_bridge->main_bus->main_core_bridge->core_
+bus
+  (0x11100000-0x1117ffff)
+cond_vars	group1_bus->group1_main_bridge->main_bus->main_core_bridge->core_bus
+  (0x12000000-0x12ffffff)
+scheduler	group1_bus->group1_main_bridge->main_bus->main_core_bridge->core_bus
+  (0x13000000-0x13ffffff)
+sync_manager	group1_bus->group1_main_bridge->main_bus->main_core_bridge->core_bu
+s
+  (0x10000000-0x17ffffff) group1_main_bridge	group1_bus
+  (0x10000000-0x17ffffff)
+main_core_bridge	group1_bus->group1_main_bridge->main_bus
+  (0x70000000-0x7000ffff) group1_main_bridge	group1_bus
+  (0x84000000-0x8400ffff) RS232_Uart_1	group1_bus->group1_main_bridge->main_bus
+  (0x84010000-0x8401ffff) mdm_0	group1_bus->group1_main_bridge->main_bus
+  (0x84050000-0x8405ffff)
+xps_central_dma_0	group1_bus->group1_main_bridge->main_bus
+  (0x84200000-0x8420ffff)
+plb_hthread_reset_core_0	group1_bus->group1_main_bridge->main_bus
+  (0x84000000-0x84ffffff) group1_main_bridge	group1_bus
+  (0xa0000000-0xafffffff) group1_main_bridge	group1_bus
+  (0xa0000000-0xafffffff) mpmc_0	group1_bus->group1_main_bridge->main_bus
+Address Map for Processor microblaze2
+  (0000000000-0x00003fff) dlmb_cntlr2	dlmb2
+  (0000000000-0x00003fff) ilmb_cntlr2	ilmb2
+  (0x11000000-0x1103ffff)
+thread_manager	group2_bus->group2_main_bridge->main_bus->main_core_bridge->core_
+bus
+  (0x11100000-0x1117ffff)
+cond_vars	group2_bus->group2_main_bridge->main_bus->main_core_bridge->core_bus
+  (0x12000000-0x12ffffff)
+scheduler	group2_bus->group2_main_bridge->main_bus->main_core_bridge->core_bus
+  (0x13000000-0x13ffffff)
+sync_manager	group2_bus->group2_main_bridge->main_bus->main_core_bridge->core_bu
+s
+  (0x10000000-0x17ffffff) group2_main_bridge	group2_bus
+  (0x10000000-0x17ffffff)
+main_core_bridge	group2_bus->group2_main_bridge->main_bus
+  (0x70000000-0x7000ffff) group2_main_bridge	group2_bus
+  (0x84000000-0x8400ffff) RS232_Uart_1	group2_bus->group2_main_bridge->main_bus
+  (0x84010000-0x8401ffff) mdm_0	group2_bus->group2_main_bridge->main_bus
+  (0x84050000-0x8405ffff)
+xps_central_dma_0	group2_bus->group2_main_bridge->main_bus
+  (0x84200000-0x8420ffff)
+plb_hthread_reset_core_0	group2_bus->group2_main_bridge->main_bus
+  (0x84000000-0x84ffffff) group2_main_bridge	group2_bus
+  (0xa0000000-0xafffffff) group2_main_bridge	group2_bus
+  (0xa0000000-0xafffffff) mpmc_0	group2_bus->group2_main_bridge->main_bus
+Address Map for Processor microblaze3
+  (0000000000-0x00003fff) dlmb_cntlr3	dlmb3
+  (0000000000-0x00003fff) ilmb_cntlr3	ilmb3
+  (0x11000000-0x1103ffff)
+thread_manager	group3_bus->group3_main_bridge->main_bus->main_core_bridge->core_
+bus
+  (0x11100000-0x1117ffff)
+cond_vars	group3_bus->group3_main_bridge->main_bus->main_core_bridge->core_bus
+  (0x12000000-0x12ffffff)
+scheduler	group3_bus->group3_main_bridge->main_bus->main_core_bridge->core_bus
+  (0x13000000-0x13ffffff)
+sync_manager	group3_bus->group3_main_bridge->main_bus->main_core_bridge->core_bu
+s
+  (0x10000000-0x17ffffff) group3_main_bridge	group3_bus
+  (0x10000000-0x17ffffff)
+main_core_bridge	group3_bus->group3_main_bridge->main_bus
+  (0x70000000-0x7000ffff) group3_main_bridge	group3_bus
+  (0x84000000-0x8400ffff) RS232_Uart_1	group3_bus->group3_main_bridge->main_bus
+  (0x84010000-0x8401ffff) mdm_0	group3_bus->group3_main_bridge->main_bus
+  (0x84050000-0x8405ffff)
+xps_central_dma_0	group3_bus->group3_main_bridge->main_bus
+  (0x84200000-0x8420ffff)
+plb_hthread_reset_core_0	group3_bus->group3_main_bridge->main_bus
+  (0x84000000-0x84ffffff) group3_main_bridge	group3_bus
+  (0xa0000000-0xafffffff) group3_main_bridge	group3_bus
+  (0xa0000000-0xafffffff) mpmc_0	group3_bus->group3_main_bridge->main_bus
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 408 - tool is overriding PARAMETER C_SPLB1_P2P value to
+   0
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 459 - tool is overriding PARAMETER C_SPLB2_P2P value to
+   0
+
+
+WARNING:EDK:2137 - Peripheral iplb_cntlr1 is not accessible from any processor
+   in the system. Check Bus Interface connections and address parameters. 
+
+
+WARNING:EDK:2137 - Peripheral dplb_cntlr1 is not accessible from any processor
+   in the system. Check Bus Interface connections and address parameters. 
+
+
+WARNING:EDK:2137 - Peripheral iplb_cntlr2 is not accessible from any processor
+   in the system. Check Bus Interface connections and address parameters. 
+
+
+WARNING:EDK:2137 - Peripheral dplb_cntlr2 is not accessible from any processor
+   in the system. Check Bus Interface connections and address parameters. 
+
+
+WARNING:EDK:2137 - Peripheral iplb_cntlr3 is not accessible from any processor
+   in the system. Check Bus Interface connections and address parameters. 
+
+
+WARNING:EDK:2137 - Peripheral dplb_cntlr3 is not accessible from any processor
+   in the system. Check Bus Interface connections and address parameters. 
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:main_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 69 - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 6
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:main_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 70 - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 7
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:main_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 71 - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 3
+INFO:EDK:1560 - IPNAME:microblaze INSTANCE:microblaze0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 188 - tool is overriding PARAMETER
+   C_DPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:microblaze INSTANCE:microblaze0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/microblaze_v8_00_a
+   /data/microblaze_v2_1_0.mpd line 192 - tool is overriding PARAMETER
+   C_IPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:lmb_v10 INSTANCE:ilmb0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v1_00_a/da
+   ta/lmb_v10_v2_1_0.mpd line 70 - tool is overriding PARAMETER C_LMB_NUM_SLAVES
+   value to 1
+INFO:EDK:1560 - IPNAME:lmb_v10 INSTANCE:dlmb0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v1_00_a/da
+   ta/lmb_v10_v2_1_0.mpd line 70 - tool is overriding PARAMETER C_LMB_NUM_SLAVES
+   value to 1
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:host_bram0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a
+   /data/bram_block_v2_1_0.mpd line 67 - tool is overriding PARAMETER C_MEMSIZE
+   value to 0x4000
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:host_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 69 - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:host_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 70 - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 6
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:host_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 71 - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:host_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 78 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:host_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 82 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:host_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 84 - tool is overriding
+   PARAMETER C_MPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group1_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 69 - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group1_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 70 - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 1
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group1_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 71 - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group1_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 73 - tool is overriding PARAMETER C_PLBV46_DWIDTH
+   value to 32
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:group1_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 78 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:group1_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 84 - tool is overriding
+   PARAMETER C_MPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:lmb_v10 INSTANCE:ilmb1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v1_00_a/da
+   ta/lmb_v10_v2_1_0.mpd line 70 - tool is overriding PARAMETER C_LMB_NUM_SLAVES
+   value to 1
+INFO:EDK:1560 - IPNAME:lmb_v10 INSTANCE:dlmb1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v1_00_a/da
+   ta/lmb_v10_v2_1_0.mpd line 70 - tool is overriding PARAMETER C_LMB_NUM_SLAVES
+   value to 1
+INFO:EDK:1560 - IPNAME:xps_bram_if_cntlr INSTANCE:iplb_cntlr1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_
+   v1_00_b/data/xps_bram_if_cntlr_v2_1_0.mpd line 74 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 1
+INFO:EDK:1560 - IPNAME:xps_bram_if_cntlr INSTANCE:dplb_cntlr1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_
+   v1_00_b/data/xps_bram_if_cntlr_v2_1_0.mpd line 74 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 1
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:ilmb_bram1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a
+   /data/bram_block_v2_1_0.mpd line 67 - tool is overriding PARAMETER C_MEMSIZE
+   value to 0x4000
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:dlmb_bram1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a
+   /data/bram_block_v2_1_0.mpd line 67 - tool is overriding PARAMETER C_MEMSIZE
+   value to 0x4000
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group2_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 69 - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group2_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 70 - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 1
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group2_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 71 - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group2_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 73 - tool is overriding PARAMETER C_PLBV46_DWIDTH
+   value to 32
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:group2_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 78 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:group2_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 84 - tool is overriding
+   PARAMETER C_MPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:lmb_v10 INSTANCE:ilmb2 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v1_00_a/da
+   ta/lmb_v10_v2_1_0.mpd line 70 - tool is overriding PARAMETER C_LMB_NUM_SLAVES
+   value to 1
+INFO:EDK:1560 - IPNAME:lmb_v10 INSTANCE:dlmb2 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v1_00_a/da
+   ta/lmb_v10_v2_1_0.mpd line 70 - tool is overriding PARAMETER C_LMB_NUM_SLAVES
+   value to 1
+INFO:EDK:1560 - IPNAME:xps_bram_if_cntlr INSTANCE:iplb_cntlr2 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_
+   v1_00_b/data/xps_bram_if_cntlr_v2_1_0.mpd line 74 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 1
+INFO:EDK:1560 - IPNAME:xps_bram_if_cntlr INSTANCE:dplb_cntlr2 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_
+   v1_00_b/data/xps_bram_if_cntlr_v2_1_0.mpd line 74 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 1
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:ilmb_bram2 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a
+   /data/bram_block_v2_1_0.mpd line 67 - tool is overriding PARAMETER C_MEMSIZE
+   value to 0x4000
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:dlmb_bram2 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a
+   /data/bram_block_v2_1_0.mpd line 67 - tool is overriding PARAMETER C_MEMSIZE
+   value to 0x4000
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group3_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 69 - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group3_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 70 - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 1
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group3_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 71 - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:group3_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 73 - tool is overriding PARAMETER C_PLBV46_DWIDTH
+   value to 32
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:group3_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 78 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:group3_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 84 - tool is overriding
+   PARAMETER C_MPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:lmb_v10 INSTANCE:ilmb3 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v1_00_a/da
+   ta/lmb_v10_v2_1_0.mpd line 70 - tool is overriding PARAMETER C_LMB_NUM_SLAVES
+   value to 1
+INFO:EDK:1560 - IPNAME:lmb_v10 INSTANCE:dlmb3 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v1_00_a/da
+   ta/lmb_v10_v2_1_0.mpd line 70 - tool is overriding PARAMETER C_LMB_NUM_SLAVES
+   value to 1
+INFO:EDK:1560 - IPNAME:xps_bram_if_cntlr INSTANCE:iplb_cntlr3 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_
+   v1_00_b/data/xps_bram_if_cntlr_v2_1_0.mpd line 74 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 1
+INFO:EDK:1560 - IPNAME:xps_bram_if_cntlr INSTANCE:dplb_cntlr3 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_bram_if_cntlr_
+   v1_00_b/data/xps_bram_if_cntlr_v2_1_0.mpd line 74 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 1
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:ilmb_bram3 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a
+   /data/bram_block_v2_1_0.mpd line 67 - tool is overriding PARAMETER C_MEMSIZE
+   value to 0x4000
+INFO:EDK:1560 - IPNAME:bram_block INSTANCE:dlmb_bram3 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a
+   /data/bram_block_v2_1_0.mpd line 67 - tool is overriding PARAMETER C_MEMSIZE
+   value to 0x4000
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:vhwti_bus1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 69 - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 1
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:vhwti_bus1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 70 - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 6
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:vhwti_bus1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 71 - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 1
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:vhwti_bus1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 73 - tool is overriding PARAMETER C_PLBV46_DWIDTH
+   value to 32
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:main_vhwti_bridge1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 77 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 3
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:main_vhwti_bridge1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 78 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 6
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:main_vhwti_bridge1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 82 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:core_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 77 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 3
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:core_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 78 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 5
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:core_main_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 84 - tool is overriding
+   PARAMETER C_MPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:main_core_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 77 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 3
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:main_core_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 78 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 6
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:main_core_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 82 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:host_core_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 78 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:plbv46_plbv46_bridge INSTANCE:host_core_bridge -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_plbv46_brid
+   ge_v1_03_a/data/plbv46_plbv46_bridge_v2_1_0.mpd line 82 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:core_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 69 - tool is overriding PARAMETER
+   C_PLBV46_NUM_MASTERS value to 5
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:core_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 70 - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:core_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 71 - tool is overriding PARAMETER
+   C_PLBV46_MID_WIDTH value to 3
+INFO:EDK:1560 - IPNAME:plb_v46 INSTANCE:core_bus -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/da
+   ta/plb_v46_v2_1_0.mpd line 73 - tool is overriding PARAMETER C_PLBV46_DWIDTH
+   value to 32
+INFO:EDK:1560 - IPNAME:plb_cond_vars INSTANCE:cond_vars -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_cond
+   _vars_v1_00_a/data/plb_cond_vars_v2_1_0.mpd line 29 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32
+INFO:EDK:1560 - IPNAME:plb_cond_vars INSTANCE:cond_vars -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_cond
+   _vars_v1_00_a/data/plb_cond_vars_v2_1_0.mpd line 30 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 5
+INFO:EDK:1560 - IPNAME:plb_cond_vars INSTANCE:cond_vars -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_cond
+   _vars_v1_00_a/data/plb_cond_vars_v2_1_0.mpd line 40 - tool is overriding
+   PARAMETER C_MPLB_DWIDTH value to 32
+INFO:EDK:1560 - IPNAME:plb_scheduler INSTANCE:scheduler -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_sche
+   duler_v1_00_a/data/plb_scheduler_v2_1_0.mpd line 28 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32
+INFO:EDK:1560 - IPNAME:plb_scheduler INSTANCE:scheduler -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_sche
+   duler_v1_00_a/data/plb_scheduler_v2_1_0.mpd line 29 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 5
+INFO:EDK:1560 - IPNAME:plb_scheduler INSTANCE:scheduler -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_sche
+   duler_v1_00_a/data/plb_scheduler_v2_1_0.mpd line 39 - tool is overriding
+   PARAMETER C_MPLB_DWIDTH value to 32
+INFO:EDK:1560 - IPNAME:plb_thread_manager INSTANCE:thread_manager -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_thre
+   ad_manager_v1_00_a/data/plb_thread_manager_v2_1_0.mpd line 27 - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 32
+INFO:EDK:1560 - IPNAME:plb_thread_manager INSTANCE:thread_manager -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_thre
+   ad_manager_v1_00_a/data/plb_thread_manager_v2_1_0.mpd line 28 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 5
+INFO:EDK:1560 - IPNAME:plb_sync_manager INSTANCE:sync_manager -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_sync
+   _manager_v1_00_a/data/plb_sync_manager_v2_1_0.mpd line 33 - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 32
+INFO:EDK:1560 - IPNAME:plb_sync_manager INSTANCE:sync_manager -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_sync
+   _manager_v1_00_a/data/plb_sync_manager_v2_1_0.mpd line 34 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 5
+INFO:EDK:1560 - IPNAME:plb_sync_manager INSTANCE:sync_manager -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_sync
+   _manager_v1_00_a/data/plb_sync_manager_v2_1_0.mpd line 44 - tool is
+   overriding PARAMETER C_MPLB_DWIDTH value to 32
+INFO:EDK:1560 - IPNAME:plb_hthread_reset_core INSTANCE:plb_hthread_reset_core_0
+   -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_hthr
+   ead_reset_core_v1_00_a/data/plb_hthread_reset_core_v2_1_0.mpd line 27 - tool
+   is overriding PARAMETER C_SPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:plb_hthread_reset_core INSTANCE:plb_hthread_reset_core_0
+   -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_hthr
+   ead_reset_core_v1_00_a/data/plb_hthread_reset_core_v2_1_0.mpd line 28 - tool
+   is overriding PARAMETER C_SPLB_NUM_MASTERS value to 6
+INFO:EDK:1560 - IPNAME:plb_hthreads_timer INSTANCE:plb_hthreads_timer_0 -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_hthr
+   eads_timer_v1_00_a/data/plb_hthreads_timer_v2_1_0.mpd line 28 - tool is
+   overriding PARAMETER C_SPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:plb_hthreads_timer INSTANCE:plb_hthreads_timer_0 -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_hthr
+   eads_timer_v1_00_a/data/plb_hthreads_timer_v2_1_0.mpd line 29 - tool is
+   overriding PARAMETER C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:plb_hthreads_timer INSTANCE:plb_hthreads_timer_0 -
+   /home/abazar63/hthread/src/platforms/xilinx/numa3_hwti/design/pcores/plb_hthr
+   eads_timer_v1_00_a/data/plb_hthreads_timer_v2_1_0.mpd line 30 - tool is
+   overriding PARAMETER C_SPLB_MID_WIDTH value to 1
+INFO:EDK:1560 - IPNAME:xps_timer INSTANCE:xps_timer_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_timer_v1_02_a/
+   data/xps_timer_v2_1_0.mpd line 75 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:xps_timer INSTANCE:xps_timer_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_timer_v1_02_a/
+   data/xps_timer_v2_1_0.mpd line 77 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 1
+INFO:EDK:1560 - IPNAME:xps_timer INSTANCE:xps_timer_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_timer_v1_02_a/
+   data/xps_timer_v2_1_0.mpd line 78 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:mdm INSTANCE:mdm_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_a/data/m
+   dm_v2_1_0.mpd line 82 - tool is overriding PARAMETER C_SPLB_DWIDTH value to
+   64
+INFO:EDK:1560 - IPNAME:mdm INSTANCE:mdm_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_00_a/data/m
+   dm_v2_1_0.mpd line 85 - tool is overriding PARAMETER C_SPLB_NUM_MASTERS value
+   to 6
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 406 - tool is overriding PARAMETER C_SPLB1_NUM_MASTERS
+   value to 6
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 407 - tool is overriding PARAMETER C_SPLB1_MID_WIDTH
+   value to 3
+INFO:EDK:1560 - IPNAME:mpmc INSTANCE:mpmc_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_02_a/data/
+   mpmc_v2_1_0.mpd line 457 - tool is overriding PARAMETER C_SPLB2_NUM_MASTERS
+   value to 2
+INFO:EDK:1560 - IPNAME:xps_uartlite INSTANCE:RS232_Uart_1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_01
+   _a/data/xps_uartlite_v2_1_0.mpd line 71 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:xps_uartlite INSTANCE:RS232_Uart_1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_01
+   _a/data/xps_uartlite_v2_1_0.mpd line 73 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 3
+INFO:EDK:1560 - IPNAME:xps_uartlite INSTANCE:RS232_Uart_1 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_uartlite_v1_01
+   _a/data/xps_uartlite_v2_1_0.mpd line 74 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 6
+INFO:EDK:1560 - IPNAME:xps_intc INSTANCE:xps_intc_0 -
+   /home/abazar63/hthread/src/hardware/XilinxProcessorIP/pcores/xps_intc_v2_01_a
+   /data/xps_intc_v2_1_0.mpd line 71 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:xps_intc INSTANCE:xps_intc_0 -
+   /home/abazar63/hthread/src/hardware/XilinxProcessorIP/pcores/xps_intc_v2_01_a
+   /data/xps_intc_v2_1_0.mpd line 73 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 2
+INFO:EDK:1560 - IPNAME:xps_central_dma INSTANCE:xps_central_dma_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_central_dma_v2
+   _03_a/data/xps_central_dma_v2_1_0.mpd line 70 - tool is overriding PARAMETER
+   C_SPLB_DWIDTH value to 64
+INFO:EDK:1560 - IPNAME:xps_central_dma INSTANCE:xps_central_dma_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_central_dma_v2
+   _03_a/data/xps_central_dma_v2_1_0.mpd line 72 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 6
+INFO:EDK:1560 - IPNAME:xps_central_dma INSTANCE:xps_central_dma_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_central_dma_v2
+   _03_a/data/xps_central_dma_v2_1_0.mpd line 73 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 3
+INFO:EDK:1560 - IPNAME:xps_central_dma INSTANCE:xps_central_dma_0 -
+   /opt/Xilinx/12.3/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_central_dma_v2
+   _03_a/data/xps_central_dma_v2_1_0.mpd line 79 - tool is overriding PARAMETER
+   C_MPLB_DWIDTH value to 64
+
+Checking platform address map ...
+
+Initializing Memory...
+Running Data2Mem with the following command:
+data2mem -bm implementation/system_bd -p xc6vlx240tff1156-1 -bt
+implementation/system.bit  -bd CoreTest/executable.elf tag microblaze0  -bd
+MB_HWT0/executable.elf tag microblaze1  -bd MB_HWT1/executable.elf tag
+microblaze2  -bd MB_HWT2/executable.elf tag microblaze3  -o b
+implementation/download.bit 
+Memory Initialization completed successfully.
+
