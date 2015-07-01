@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check arguments
-if [ $# -ne 3 ]
+if [ $# -ne 2]
 then
     echo "Correct Usage:"
     echo " ./sdk_config.sh   <Num of groups> <Num of Slaves>  <name of the system>  "
@@ -10,7 +10,7 @@ fi
 
 N=$1
 C=$2
-name=$3
+#name=$3
 let num_slaves=($N*$C)
 
 #===============================================================
@@ -20,8 +20,14 @@ let num_slaves=($N*$C)
 #then
 #    mystring+="Hemps"
 #fi
+#mystring="./platforms/"
+#mystring+=$name
 mystring="./platforms/"
-mystring+=$name
+mystring+="N"
+mystring+="$N"
+mystring+="C"
+mystring+="$C"
+mystring+="hemps_smp"
 cd ..
 rm -f design
 
@@ -93,7 +99,7 @@ done
 #===============================================================
 #create the download.bit
 #===============================================================
- cmd=" -bm ./design/design.sdk/system_wrapper_hw_platform_0/system_wrapper.bmm -bt ./design/design.sdk/system_wrapper_hw_platform_0/system_wrapper.bit    "
+ cmd=" -bm ./design/design.sdk/system_wrapper_hw_platform_0/system_wrapper_bd.bmm -bt ./design/design.sdk/system_wrapper_hw_platform_0/system_wrapper.bit    "
 for (( j=0; j<$N; j++ ))
 do
    for (( i=0; i<$C; i++ ))
