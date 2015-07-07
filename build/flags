@@ -33,6 +33,7 @@ if $(PLATFORM_VENDOR) != "pthreads"
 {
     HDRS    += $(TOP)$(SLASH)include$(SLASH)hthread ;
     HDRS    += $(TOP)$(SLASH)include$(SLASH)accelerators ;
+    HDRS    += $(TOP)$(SLASH)include$(SLASH)vam ;
     HDRS    += $(TOP)$(SLASH)include$(SLASH)drivers ;
     HDRS    += $(TOP)$(SLASH)include$(SLASH)lwip ;
     HDRS    += $(TOP)$(SLASH)include$(SLASH)lwip$(SLASH)ipv4 ;

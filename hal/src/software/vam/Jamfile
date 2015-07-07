@@ -1,0 +1,29 @@
+########################################################################################
+# File:     src/software/vam/Jamfile
+# Author:   Sen Ma
+# Date:     12 May 2015
+#
+# Desc:     This is the Jam build file for the src/software subdirectory of the
+#           Hthreads project. This file instructs the Jam build system on how to build
+#           the Hthreads project.
+#           See http://www.perforce.com/jam/jam.html for more information.
+#
+########################################################################################
+SubDir TOP src software vam ;
+LOCATE_TARGET = software$(SLASH)vam ;
+
+########################################################################################
+# Add the user code sources to the Hthreads library
+########################################################################################
+Hobject vam.o                           : vam.c ;
+Hobject vam_syscall.o                   : vam_syscall.c ;
+Hobject vam_maze.o                      : vam_maze.c ;
+
+
+########################################################################################
+# Add the object files to the hthreads library
+########################################################################################
+Hlib hthread : vam.o ;
+Hlib hthread : vam_syscall.o ;
+Hlib hthread : vam_maze.o ;
+

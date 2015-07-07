@@ -19,6 +19,7 @@ SubInclude TOP src software system ;
 SubInclude TOP src software user ;
 SubInclude TOP src software drivers ;
 SubInclude TOP src software accelerators ;
+#SubInclude TOP src software vam ;
 #SubInclude TOP src software fs ;
 #SubInclude TOP src software lib ;
 #SubInclude TOP src software dev ;
